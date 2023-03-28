@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    transition: all 0.2s ease;
+    font-size: 1.6rem;
+}
+
+:root {
+    --primary: #;
+    --secondary: #393939;
+}
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {} */
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-feature-settings: "case";
+    line-height: 1.5;
+    background: #FFFFFF;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+span {
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: 'case'on;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: fit-content;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-feature-settings: 'case'on;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-a {
+    max-width: 1920px;
+    width: 93.33%;
+    margin: 0 auto;
+}
+
+.container-b {
+    max-width: 1920px;
+    width: 52.08%;
+    margin: 0 auto;
+}
+
+.container-c {
+    max-width: 1920px;
+    width: 76.25%;
+    margin: 0 auto;
+}
+
+a[aria-current="page"] {
+    color: var(--secondary);
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 56.5%;
+    }
+
+    /* ::-webkit-scrollbar {
+        width: 3px;
+    } */
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 44.5%;
+    }
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+    background: transparent;
+}
+
+header .logo {
+    max-width: 148px;
+    width: 100%;
+    height: 118px;
+}
+
+header .logo:hover {
+    filter: grayscale(30%);
+}
+
+header .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    background: transparent;
+}
+
+header .hamburger:hover .stripe {
+    opacity: 0.8;
+}
+
+header .stripe {
+    width: 24px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+header .stripe:first-child {
+    transform-origin: center bottom;
+}
+
+header .stripe:last-child {
+    transform-origin: center top;
+}
+
+header .hamburger.active .stripe:first-child {
+    transform: rotate(45deg) translate(0px, 6px);
+}
+
+header .hamburger.active .stripe:last-child {
+    transform: rotate(-45deg) translate(0px, -6px);
+}
