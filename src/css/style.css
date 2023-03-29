@@ -107,6 +107,12 @@ a[aria-current="page"] {
     color: var(--secondary);
 }
 
+@media (max-width: 1600px) {
+    .container-b {
+        width: 76.25%;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 56.5%;
@@ -285,4 +291,124 @@ main section h2 {
     line-height: 48px;
     font-feature-settings: 'case'on;
     color: #393939;
+}
+
+main section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.history-cont .side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 433px;
+    width: 100%;
+}
+
+.history-cont .side p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    font-feature-settings: 'case'on;
+    color: #393939;
+}
+
+.history-cont .bg {
+    width: 510px;
+    height: 789px;
+    min-width: 400px;
+}
+
+.philosophy-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.philosophy-cont .bg-top {
+    width: 100%;
+    height: 461px;
+}
+
+.philosophy-cont .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.philosophy-cont .bottom .side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 433px;
+    width: 100%;
+}
+
+.philosophy-cont .bottom .side p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    font-feature-settings: 'case'on;
+    color: #393939;
+}
+
+.philosophy-cont .bottom .side .first-word {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+    font-feature-settings: 'case'on;
+    color: #393939;
+    margin-right: 4px;
+}
+
+.philosophy-cont .bottom .bg {
+    width: 511px;
+    height: 524px;
+}
+
+.production-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.production-cont .abt {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.production-cont .abt p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    font-feature-settings: 'case'on;
+    color: #393939;
+}
+
+.production-cont .bg {
+    width: 490px;
+    height: 490px;
 }
