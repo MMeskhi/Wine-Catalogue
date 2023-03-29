@@ -17,3 +17,33 @@ function openSidebar() {
 }
 
 hamburger.addEventListener("click", openSidebar);
+
+//Sliders
+const swiper1 = new Swiper(".hero .mySwiper", {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  speed: 500,
+  scrollbar: {
+    el: ".hero .swiper-scrollbar",
+    draggable: true,
+  },
+});
+
+const swiper2 = new Swiper(".wines-cont .mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  speed: 500,
+  centeredSlides: true,
+  roundLengths: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -18,6 +18,7 @@
 
     <link rel="shortcut icon" href="src/img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/scrollbar.min.css" />
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/style.css">
 
@@ -40,7 +41,17 @@
         </div>
 
         <section class="hero container-a">
-            <img src="src/img/Rectangle 1.png" alt="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="src/img/Rectangle 1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/img/Rectangle 1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
         </section>
 
         <aside>
@@ -153,7 +164,7 @@
                 <hr>
             </div>
             <div class="production-cont container-b">
-                <div class="abt">
+                <div class="abt b">
                     <p>
                         In 2014, Álvar de Dios established his own winery and then, in 2015, expanded into a
                         little-known wine-growing region with huge potential: Arribes del Duero.
@@ -164,13 +175,13 @@
                         the mysterious borderlands in Camino de los Arrieros, Las Vidres and Yavallo.
                     </p>
                 </div>
-                <div class="bg">
+                <div class="bg a">
                     <img src="src/img/Rectangle 17.png" alt="">
                 </div>
-                <div class="bg">
+                <div class="bg c">
                     <img src="src/img/Rectangle 18.png" alt="">
                 </div>
-                <div class="abt">
+                <div class="abt d">
                     <p>
                         Devotion to and respect for the land, commitment to nature and the embrace of tradition have
                         guided the wine-growing career of Álvar de Dios Hernández since 2008, the year in which he took
@@ -189,9 +200,59 @@
                 </div>
             </div>
         </section>
+
+        <section id="wines">
+            <div class="heading">
+                <hr>
+                <h2>Wines</h2>
+                <hr>
+            </div>
+            <div class="wines-cont container-c">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h4>CAMINO DE LOS ARRIEROS</h4>
+                            <img src="src/img/Trebbiolo-2019.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>CAMINO DE LOS ARRIEROS</h4>
+                            <img src="src/img/Trebbiolo-2019.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>CAMINO DE LOS ARRIEROS</h4>
+                            <img src="src/img/Trebbiolo-2019.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="heading">
+                <hr>
+                <h2>Contact</h2>
+                <hr>
+            </div>
+            <div class="contact-cont">
+                <a href="#" target="_blank">Tbilisi,Georgia, Chavchavadze street N2</a>
+                <a href="mailto:Info.loliashvili@gmail.com" target="_blank">Info.loliashvili@gmail.com</a>
+                <a href="tel:+995 512 345 678" target="_blank">+995 512 345 678</a>
+                <div class="socials">
+                    <a href="#" target="_blank">
+                        <img src="src/img/icons/facebook 1.svg" alt="FB">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="src/img/icons/linkedin.svg" alt="iN">
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="src/js/swiper-bundle.min.js"></script>
+    <script src="src/js/jquery-3.6.4.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 
