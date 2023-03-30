@@ -70,7 +70,14 @@ const swiper1 = new Swiper(".hero .mySwiper", {
 });
 
 const swiper2 = new Swiper(".wines-cont .mySwiper", {
-  slidesPerView: 2.1,
+  breakpoints: {
+    1: {
+      slidesPerView: 2.1,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
   spaceBetween: 32,
   speed: 500,
   centeredSlides: true,
