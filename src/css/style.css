@@ -126,7 +126,7 @@ a[aria-current="page"] {
 /* Header */
 header .header-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     padding: 40px 0;
@@ -143,6 +143,24 @@ header .header-nav .logo:hover {
     filter: grayscale(30%);
 }
 
+header .header-nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px rgb(133 133 133 / 16%);
+    border-radius: 50%;
+    z-index: 99;
+
+    position: fixed;
+    right: 56px;
+}
+
 header .header-nav .hamburger {
     display: flex;
     flex-direction: column;
@@ -152,21 +170,11 @@ header .header-nav .hamburger {
     height: auto;
     cursor: pointer;
     background: transparent;
-    z-index: 10;
+    z-index: 99;
 }
 
 header .header-nav .hamburger.active {
-    position: fixed;
-    right: 56px;
-}
-
-header .header-nav .blank-active {
-    display: none;
-    width: 24px;
-}
-
-header .header-nav .blank-deactivate {
-    display: block;
+    margin-left: 6px;
 }
 
 header .header-nav .hamburger:hover .stripe {
@@ -210,7 +218,7 @@ aside {
     height: 100vh;
     max-width: 0px;
     width: 100%;
-    z-index: 9;
+    z-index: 98;
 
     background: #FFFFFF;
     box-shadow: -1px 0px 24px rgba(141, 141, 141, 0.2);
@@ -240,6 +248,10 @@ aside ul li a {
 }
 
 aside ul li a:hover {
+    font-weight: 700;
+}
+
+aside ul li a.active {
     font-weight: 700;
 }
 
@@ -605,9 +617,17 @@ main section img {
     .bg {
         width: 100% !important;
     }
+
+    header .header-nav .menu {
+        right: 40px;
+    }
 }
 
 @media (max-width: 1024px) {
+    aside {
+        width: 40%;
+    }
+
     .production-cont {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -639,5 +659,48 @@ main section img {
     .hero .swiper-horizontal>.swiper-scrollbar,
     .hero .swiper-scrollbar.swiper-scrollbar-horizontal {
         width: 90%;
+    }
+
+    .wines-cont .swiper-button-next,
+    .wines-cont .swiper-button-prev {
+        display: none;
+    }
+
+    .container-c {
+        margin: 0;
+        max-width: none;
+        width: auto;
+    }
+
+    .wines-cont .swiper {
+        width: 100%;
+        margin-top: -16px;
+    }
+
+    .wines-cont .swiper .swiper-slide h4 {
+        font-size: 18px;
+        white-space: unset;
+    }
+
+    .wines-cont .swiper .swiper-slide-active h4 {
+        font-size: 22px;
+    }
+
+    header .header-nav .menu {
+        right: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    aside {
+        width: 52%;
+    }
+
+    .wines-cont .swiper {
+        margin-top: -80px;
+    }
+
+    header .header-nav .menu {
+        right: 16px;
     }
 }
